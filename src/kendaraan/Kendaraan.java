@@ -7,12 +7,14 @@ public abstract class Kendaraan {
     int tahun;
 
     public abstract void Start();
-    
+    public abstract void Brake();
+    public abstract void Stop();
+
     public void getInfo(){
-        System.out.println("Kendaraan: " + name);
-        System.out.println("Model : " + model);
-        System.out.println("Warna : " + warna);
-        System.out.println("Tahun : " + tahun);
+        System.out.println("Kendaraan : " + getName());
+        System.out.println("Model : " + getModel());
+        System.out.println("Warna : " + getWarna());
+        System.out.println("Tahun : " + getTahun());
     }
 
     public String getName(){
